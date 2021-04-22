@@ -13,16 +13,16 @@
   padding-top: 20px;
 }
 
-.addresses__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .addresses__item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .addresses__link {

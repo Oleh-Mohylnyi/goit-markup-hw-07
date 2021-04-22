@@ -9,6 +9,15 @@
 
 .social-list__icon {
   fill: $border-icon-color;
+
+  .social-list__link:focus &,
+  .social-list__link:hover & {
+    fill: $bg-color;
+  }
+}
+
+.social-list__icon--footer {
+  fill: $bg-color;
 }
 
 .social-list__link {
@@ -26,15 +35,6 @@
   &:hover {
     background-color: $accent-color;
   }
-}
-
-.social-list__link:focus .social-list__icon,
-.social-list__link:hover .social-list__icon {
-  fill: $bg-color;
-}
-
-.social-list__icon--footer {
-  fill: $bg-color;
 }
 
 .social-list__link--footer {

@@ -97,11 +97,6 @@
   }
 }
 
-.portfolio__card:focus .portfolio__overley,
-.portfolio__card:hover .portfolio__overley {
-  transform: translateY(0);
-}
-
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
@@ -122,4 +117,9 @@
   background-color: $bg-portfolio-overley-color;
   transform: translateY(100%);
   transition: transform $transition-duration $timing-function;
+
+  .portfolio__card:focus &,
+  .portfolio__card:hover & {
+    transform: translateY(0);
+  }
 }
