@@ -77,18 +77,20 @@
   }
 }
 
-.contacts__icon--envelope {
-  width: 16px;
-  height: 12px;
+%contacts__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms $timing-function;
 }
 
+.contacts__icon--envelope {
+  width: 16px;
+  height: 12px;
+  @extend %contacts__icon;
+}
+
 .contacts__icon--smartphone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill 250ms $timing-function;
+  @extend %contacts__icon;
 }

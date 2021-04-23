@@ -23,7 +23,7 @@
   padding-left: 36px;
   border-radius: 4px;
   border: 1px solid $border-input-color;
-  transition: border $transition-duration $timing-function;
+  @include transitions(border);
 
   &:hover,
   &:focus {
@@ -38,7 +38,7 @@
   bottom: 11px;
   width: 18px;
   fill: $text-main-color;
-  transition: fill $transition-duration $timing-function;
+  @include transitions(fill);
 
   .form-order__input:hover + &,
   .form-order__input:focus + & {
@@ -91,7 +91,7 @@
   margin-right: 7px;
   border: 2px solid $text-main-color;
   border-radius: 2px;
-  transition: border $transition-duration $timing-function;
+  @include transitions(border);
 
   .form-order__checkbox:checked + & {
     border-color: transparent;
